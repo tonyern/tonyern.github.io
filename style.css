@@ -9,6 +9,12 @@ body
 	font-family: sans-serif;
 }
 
+/***** Hyperlink styling *****/
+body a
+{
+	color: #fff
+}
+
 /***** Navigation bar section *****/
 
 #nav-bar
