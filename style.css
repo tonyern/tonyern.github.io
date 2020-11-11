@@ -4,18 +4,15 @@
 	padding: 0;
 }
 
+:root {
+	--main-text-color: black;
+	--main-color-theme: white;
+}
+
 body
 {
 	font-family: sans-serif;
 }
-
-/***** Hyperlink styling *****/
-body a
-{
-	color: #fff
-}
-
-/***** Navigation bar section *****/
 
 #nav-bar
 {
@@ -26,7 +23,7 @@ body a
 
 .navbar
 {
-	background-image: linear-gradient(to right, #0cacb5, #065c60);
+	background-color: var(--main-color-theme, red);
 	padding: 0 !important;
 }
 
@@ -35,23 +32,23 @@ body a
 	padding: 0 10px;
 }
 
+.navbar-brand
+{
+	color: var(--main-text-color, black) !important;
+	font-size: 40px !important;
+}
+
 .navbar-nav li a
 {
-	color: #fff !important;
+	color: var(--main-text-color, black) !important;
 	font-weight: 600;
 	float: right;
 	text-align: left;
 }
 
-.navbar-brand
-{
-	color: #fff !important;
-	font-size: 40px !important;
-}
-
 .fa-bars
 {
-	color: #fff;
+	color: var(--main-text-color);
 	font-size: 30px !important;
 }
 
@@ -60,9 +57,6 @@ body a
 	outline: none !important;
 }
 
-/***** End of Navigation bar section *****/
-
-/***** Banner Section *****/
 #banner
 {
 	background-image: linear-gradient(to right, #0cacb5, #065c60);
@@ -72,7 +66,7 @@ body a
 
 p.promo-title
 {
-	font-size: 40px;
+	font-size: 45px;
 	font-weight: 600;
 	margin-top: 20px;
 }
@@ -103,19 +97,13 @@ p.promo-title
 	transform: translateY(8px);
 }
 
-/***** End of Banner Section *****/
-
-/***** About Me and Experience Section *****/
 .about-image img
 {
 	width: auto !important;
-	height: 200px !important;
+	height: auto !important;
 }
 
-/***** End of About Me and Experience Section *****/
-
 /***** Contact Form Styling *****/
-
 /* https://www.w3schools.com/howto/howto_css_contact_form.asp */
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], input[type=email], select, textarea {
@@ -127,58 +115,37 @@ input[type=text], input[type=email], select, textarea {
 	margin-top: 6px; /* Add a top margin */
 	margin-bottom: 16px; /* Bottom margin */
 	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+}
   
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
 	background-color: #4CAF50;
 	color: white;
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-  }
+}
   
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
 	background-color: #45a049;
-  }
+}
   
-  /* Add a background color and some padding around the form */
-  .container-contact {
+/* Add a background color and some padding around the form */
+.container-contact {
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	padding: 20px;
-  }
+}
 
-/***** End of Contact Form Styling *****/
-
-/***** Footer Section *****/
 #footer
 {
-	background-image: linear-gradient(to right, #0cacb5, #065c60);
-	color: #fff;
+	background-color: black;
+	color: white;
+	padding-top: 15px;
 }
 
-.footer-box
-{
-	padding: 20px;
-}
-
-.footer-box img
-{
-	width: 120px;
-	margin-bottom: 20px;
-}
-
-.footer-box .fa
-{
-	margin-right: 8px;
-	font-size: 25px;
-	height: 40px;
-	width: 40px;
-	text-align: center;
-	padding-top: 7px;
-	border-radius: 2px;
-	background-image: linear-gradient(to right, #0cacb5, #065c60);
+.social-icon {
+	text-align: right;
 }
