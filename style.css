@@ -9,6 +9,10 @@
 	--main-color-theme: white;
 }
 
+a {
+	color: var(--main-color-theme, white);
+}
+
 body
 {
 	font-family: sans-serif;
