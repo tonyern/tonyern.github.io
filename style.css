@@ -27,7 +27,7 @@ body
 
 .navbar
 {
-	background-color: var(--main-color-theme, red);
+	background-color: var(--main-color-theme, white);
 	padding: 0 !important;
 }
 
@@ -65,8 +65,8 @@ body
 {
 	background-image: linear-gradient(to right, #0cacb5, #065c60);
 	color: #fff;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 p.promo-title
@@ -149,8 +149,4 @@ input[type=submit]:hover {
 	background-color: black;
 	color: white;
 	padding-top: 15px;
-}
-
-.social-icon {
-	text-align: center;
 }
